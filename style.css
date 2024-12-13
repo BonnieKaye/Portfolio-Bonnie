@@ -1,0 +1,509 @@
+@media screen and (max-width: 800px) { /* SMALL SCREEN */
+    body {
+        background: rgb(60,130,135);
+        height: 100vh;
+        margin: 0;
+    }
+    body.home {
+        background: linear-gradient(180deg, rgba(60,130,135,1) 0%, rgba(221,139,49,1) 100%); 
+        height: 100%;
+        margin: 0;  
+    }
+    body.home header {
+        background: #E79643;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    header nav a {
+        color: white;
+        padding: 10px 20px;
+        font-family: "Bad Script";
+        font-size: 22px;
+        line-height: 1.6;
+    }
+    .menu-container {
+        max-height: 0;
+        overflow: hidden;
+    }
+    .menu-container ul {
+        list-style: none;
+        padding: 0;
+    }
+    .menu-container a {
+        display:block;
+        padding: 0.5rem 0;
+        text-decoration: none;
+        font-family: "Bad Script";
+        font-size: 18px;
+        line-height: 1.5;
+        color: white;
+    }
+    header label {
+        display: flex;
+        cursor: pointer;
+        background: url("list.svg") no-repeat left center;
+        background-size: 30px;
+        padding: 20px; 
+        position: absolute;
+        right: 20px;
+    }
+    input#menu {
+        display: none;
+    }
+    input:checked + label {
+        background-image: url("X.svg");
+    }
+    input:checked ~ nav .menu-container {
+        max-height: 100%;
+    }
+    h1 {
+        font-size: 25px;
+        color: white;
+        font-family: "Handlee";
+    }
+    h2 {
+        font-size: 16px;
+        font-style: normal;
+    }
+    .swiper{
+        display: none;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d4883d;
+        border-radius: 30px;
+        border: 10px dashed #B4681B;
+        max-width: 400px;
+        height: 500px;
+        margin: 20px 30px 20px 30px;
+    }
+    .card-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        color: white;
+        font-family: "Bad Script";
+        font-size: 30px;
+        padding: 10px; 
+    }
+    p {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    footer h3 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-family: "handlee";
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    .photo-grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .photo-grid img {
+        width: 100%; 
+        height: auto; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+
+    body.graphic {
+        font-family: "Bad Script";
+    }
+    body.graphic h1 {
+        text-align: center;
+        font-size: 50px;
+        margin: 0;
+        padding: 15px;
+    }
+    body.graphic h2 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin: 0;
+    }
+    body.graphic footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E79643;
+        font-family: "handlee";
+    }
+    
+
+    body.photo h1 {
+        text-align: center;
+        font-size: 50px;
+        margin: 0;
+        padding: 15px;
+    }
+    body.photo {
+        font-family: "Bad Script";
+    } 
+    body.photo footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E79643;
+        font-family: "handlee";
+    }
+    body.photo h2 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    body.fine_art h1 {
+        text-align: center;
+        font-size: 50px;
+        margin: 0;
+        padding: 15px;
+    }
+    body.fine_art {
+        font-family: "Bad Script";
+    } 
+    body.fine_art footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E79643;
+        font-family: "handlee";
+    }
+    body.fine_art h2 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin: 0;
+    }
+
+
+    body.film {
+        font-family: "Bad Script";
+    }
+    body.film h1 {
+        text-align: center;
+        font-size: 50px;
+        margin: 0;
+        padding: 15px;
+    }
+    body.film footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E79643;
+        font-family: "handlee";
+    }
+    body.film video {
+        display: block;
+        justify-content: center;
+        object-fit: contain;
+    }
+}
+
+
+@media screen and (width >= 800px) { /* BIG SCREEN */
+    body.home {
+        background: linear-gradient(180deg, rgba(60,130,135,1) 0%, rgba(221,139,49,1) 100%);
+        height: 100vh;   
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: rgb(60,130,135);
+    }
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 20px;
+        color: white;
+        font-family: "Handlee";
+        margin: 50px;
+        display: flex;
+        padding: 10px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-size: 1.2em;
+        color: white;
+        border: 2px solid #B4681B;
+        border-radius: 10px;
+        background-color: #E79643;
+        padding: 10px 20px;
+    }
+    
+    nav ul li a:hover {
+        color: black;
+    }
+    input#menu {
+        display: none;
+    }
+    .menu-container ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .swiper {
+        width: 40rem;
+        height: 15rem;
+        margin: 50px auto;
+    }
+    .swiper-wrapper {
+        display: flex;
+    }
+    .swiper-slide {
+        text-align: center;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .swiper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -95%);
+        color: white;
+        font-size: 3rem;
+        font-family: "Bad Script";
+        text-align: center;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d4883d;
+        border-radius: 30px;
+        border: 10px dashed #B4681B;
+        max-width: 600px;
+        height: 150px;
+        margin: 20px 30px 20px 30px;
+    }
+    .card-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        color: white;
+        font-family: "Bad Script";
+        font-size: 20px;
+        padding: 10px; 
+    }
+    p {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    footer h3 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-family: "handlee";
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .photo-grid img {
+        width: 100%; 
+        height: auto; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+    }
+
+
+    body.graphic {
+        font-family: "Bad Script";
+    }
+    body.graphic h1 {
+        display: flex;
+        text-align: center;
+        font-size: 50px;
+        margin-top: 350px;
+        margin-bottom: 20px;
+        padding: 15px;
+        color: white;
+    }
+    body.graphic h2 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        margin: 0;
+    }
+    body.graphic footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E79643;
+        font-family: "handlee";
+        width: 100%;
+        padding: 20px;
+        position: relative;
+    }
+    
+
+    body.photo {
+        font-family: "Bad Script";
+        min-height: 100vh;
+    } 
+    body.photo h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    body.photo footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E79643;
+        font-family: "handlee";
+        width: 100%;
+        height: 100%;
+    }
+    body.photo h2 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    body.fine_art h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 300px;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    body.fine_art {
+        font-family: "Bad Script";
+        min-height: 100vh;
+    } 
+    body.fine_art footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E79643;
+        font-family: "handlee";
+        width: 100%;
+        height: 100%;
+    }
+    body.fine_art h2 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin: 0;
+    }
+    
+
+    body.film {
+        font-family: "Bad Script";
+        min-height: 100vh;
+    }
+    body.film h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 450px;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+    body.film footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E79643;
+        font-family: "handlee";
+        width: 100%;
+    }
+    body.film video {
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+        width: 100%;
+    }
+    body.film .photo-grid {
+        display: flex;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}

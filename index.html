@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfoilo</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="home">
+    <header>
+      <div class="header-content">
+        <h1>Bonnie Kaye's Portfoilo</h1>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="GA_slide.png" alt="Graphic Design Slider Image" />
+            <h2>Graphic Design</h2>
+          </div>
+          <div class="swiper-slide">
+            <img src="P_slide.png" alt="Photography Slider Image" />
+            <h2>Photography</h2>
+          </div>
+          <div class="swiper-slide">
+            <img src="FA_slide.png" alt="Fine Art Slider Image" />
+            <h2>Fine Art</h2>
+          </div>
+          <div class="swiper-slide">
+            <img src="F_slide.png" alt="Film Slider Image" />
+            <h2>Film</h2>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper(".swiper", {
+          direction: "horizontal",
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <input type="checkbox" id="menu" />
+      <label for="menu"></label>
+      <nav>
+        <div class="menu-container">
+          <ul>
+            <li><a class="link" href="graphic.html">Graphic Design</a></li>
+            <li><a class="link" href="photography.html">Photography</a></li>
+            <li><a class="link" href="fine_art.html">Fine Arts</a></li>
+            <li><a class="link" href="film.html">Film</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article class="card">
+        <div class="card-info">
+          <p>
+            Here is some of my work from over the years. From Graphic Design to
+            film. I threw in some of my favorite and some pieces that shows off
+            my talents.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <h3>bonniekaye80@gmail.com</h3>
+    </footer>
+  </body>
+</html>
